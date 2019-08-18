@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://3_create_delete_node/CreateButton.gd" type="Script" id=1]
+[ext_resource path="res://3_create_delete_node/Delete_Button.gd" type="Script" id=2]
+
+[node name="Main" type="Node2D"]
+
+[node name="Create_Button" type="Button" parent="."]
+margin_left = 79.7232
+margin_top = 320.944
+margin_right = 211.723
+margin_bottom = 398.944
+rect_scale = Vector2( 2, 2 )
+text = "create"
+script = ExtResource( 1 )
+
+[node name="Delete_Button" type="Button" parent="."]
+margin_left = 612.169
+margin_top = 323.147
+margin_right = 751.169
+margin_bottom = 399.147
+rect_scale = Vector2( 2, 2 )
+text = "Delete"
+script = ExtResource( 2 )
+[connection signal="pressed" from="Create_Button" to="Create_Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Delete_Button" to="Delete_Button" method="_on_Delete_Button_pressed"]
