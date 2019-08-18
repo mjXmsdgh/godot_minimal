@@ -1,2 +1,16 @@
 * godot_minimal
  
+** 1_move
+move node
+
+** 2_button
+
+check button operation
+
+** 3_create_delete_node
+
+Node create and deletion
+
+** 4_enter_exit
+
+collision judjment
