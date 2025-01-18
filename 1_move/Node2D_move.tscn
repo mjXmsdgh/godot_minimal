@@ -1,14 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://dvmr4t3jeqvmj"]
 
-[ext_resource path="res://1_move/Node2D_move.gd" type="Script" id=1]
-[ext_resource path="res://texture/red.png" type="Texture" id=2]
+[ext_resource type="Script" path="res://1_move/Node2D_move.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ciooch6nifxc3" path="res://texture/red.png" id="2"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 468.803, 159.898 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
+position = Vector2(468.803, 159.898)
+script = ExtResource("1")
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2")

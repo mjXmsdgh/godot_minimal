@@ -16,9 +16,9 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene_to(first_scene)
+	get_tree().change_scene_to_packed(first_scene)
 
 	
 func _on_Button_to_second_pressed():
-	get_tree().change_scene_to(second_scene)
+	get_tree().change_scene_to_packed(second_scene)
 

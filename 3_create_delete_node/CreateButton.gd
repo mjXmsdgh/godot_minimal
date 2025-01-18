@@ -17,7 +17,7 @@ func _ready():
 func _on_Button_pressed():
 
 	# create node
-	var red_sq=scene.instance()
+	var red_sq=scene.instantiate()
 
 	# print name
 	print("create node : name=",red_sq.name)

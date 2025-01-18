@@ -1,6 +1,6 @@
 extends Node2D
 
-export var speed=400 #move speed
+@export var speed=400 #move speed
 var screen_size      #screen size
 
 # Declare member variables here. Examples:

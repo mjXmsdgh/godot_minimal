@@ -8,7 +8,7 @@ var scene=load("res://1_move//Node2D_move.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var red_sq=scene.instance()
+	var red_sq=scene.instantiate()
 
 	add_child(red_sq)
 
