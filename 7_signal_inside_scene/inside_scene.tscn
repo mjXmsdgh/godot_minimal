@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ut4u3a52rkw"]
+
+[ext_resource type="Script" path="res://7_signal_inside_scene/label.gd" id="1_2lm55"]
+
+[node name="inside_scene" type="Node2D"]
+position = Vector2(0, 1)
+
+[node name="signal_button" type="Button" parent="."]
+offset_left = 117.0
+offset_top = 93.0
+offset_right = 212.0
+offset_bottom = 124.0
+text = "send signal
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 381.0
+offset_top = 98.0
+offset_right = 421.0
+offset_bottom = 121.0
+text = "label"
+script = ExtResource("1_2lm55")
+
+[connection signal="pressed" from="signal_button" to="Label" method="_on_signal_button_pressed"]
