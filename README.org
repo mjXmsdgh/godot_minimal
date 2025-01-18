@@ -14,3 +14,10 @@ Node create and deletion
 
 collision judjment
 
+* 5_change_scene
+
+load scene
+
+* 6_change_button_texture
+
+normal and pressed
