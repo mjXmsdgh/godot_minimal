@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_my_signal(value,text):
-	print(value,text)
+	print(value,",",text)

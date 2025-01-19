@@ -19,10 +19,7 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	
 	# signalを発信
-	emit_signal("my_signal",11,"Hello")
-	
-	print("emit")
-	
+	emit_signal("my_signal",11,"Hello")	
 
 
 func _on_button_change_scene_pressed() -> void:
