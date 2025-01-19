@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp3so6q4pqy53"]
+
+[ext_resource type="Script" path="res://8_signal_between_scene/send_signal.gd" id="1_egv41"]
+[ext_resource type="Script" path="res://8_signal_between_scene/receive_signal.gd" id="2_o211k"]
+
+[node name="SignalBetweenScene" type="Node2D"]
+
+[node name="send_signal" type="Node2D" parent="."]
+script = ExtResource("1_egv41")
+
+[node name="Button" type="Button" parent="send_signal"]
+offset_left = 268.0
+offset_top = 121.0
+offset_right = 363.0
+offset_bottom = 152.0
+text = "send signal
+"
+
+[node name="receive_signal" type="Node2D" parent="."]
+script = ExtResource("2_o211k")
+
+[connection signal="pressed" from="send_signal/Button" to="send_signal" method="_on_button_pressed"]
