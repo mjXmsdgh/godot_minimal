@@ -1,10 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://cplwogsci1qrn"]
 
-[ext_resource path="res://texture/green.png" type="Texture2D" id=1]
+[ext_resource type="Texture2D" uid="uid://cekusw6tblvt1" path="res://texture/green.png" id="1"]
 
 [node name="second_scene" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2( 510.803, 299.169 )
-scale = Vector2( 15.7161, 9.10249 )
-texture = ExtResource( 1 )
+position = Vector2(510.803, 299.169)
+scale = Vector2(15.7161, 9.10249)
+texture = ExtResource("1")
