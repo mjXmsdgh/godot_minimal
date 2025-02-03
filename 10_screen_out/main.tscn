@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3337345jmca7"]
+
+[ext_resource type="Texture2D" uid="uid://ciooch6nifxc3" path="res://texture/red.png" id="1_j7pb7"]
+[ext_resource type="Script" path="res://10_screen_out/node_2d.gd" id="1_vgxrp"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(465, 139)
+script = ExtResource("1_vgxrp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("1_j7pb7")
+metadata/_edit_group_ = true
