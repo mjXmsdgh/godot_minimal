@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d3337345jmca7"]
 
-[ext_resource type="Script" path="res://10_screen_out/main.gd" id="1_8pti3"]
+[ext_resource type="Script" path="res://10_camera_in_out/main.gd" id="1_8pti3"]
 [ext_resource type="Texture2D" uid="uid://ciooch6nifxc3" path="res://texture/red.png" id="1_j7pb7"]
-[ext_resource type="Script" path="res://10_screen_out/node_2d.gd" id="1_vgxrp"]
+[ext_resource type="Script" path="res://10_camera_in_out/node_2d.gd" id="1_vgxrp"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_8pti3")
@@ -16,6 +16,11 @@ texture = ExtResource("1_j7pb7")
 metadata/_edit_group_ = true
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 24
 
 [connection signal="screen_entered" from="Node2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="Node2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
