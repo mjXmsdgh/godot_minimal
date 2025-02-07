@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://3fu0nrju4io3"]
+
+[ext_resource type="Script" path="res://11_Heads-Up_DIsplay/hud.gd" id="1_ce0ba"]
+[ext_resource type="Texture2D" uid="uid://ciooch6nifxc3" path="res://texture/red.png" id="2_kjukb"]
+[ext_resource type="Script" path="res://11_Heads-Up_DIsplay/node_2d.gd" id="2_sg6kg"]
+[ext_resource type="Texture2D" uid="uid://cekusw6tblvt1" path="res://texture/green.png" id="4_ggpn4"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("1_ce0ba")
+
+[node name="ScoreLabel" type="Label" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 24
+text = "Score: 0"
+
+[node name="player" type="Node2D" parent="."]
+position = Vector2(411, 180)
+script = ExtResource("2_sg6kg")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+texture = ExtResource("2_kjukb")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="do_not_move" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="do_not_move"]
+position = Vector2(792, 324)
+texture = ExtResource("4_ggpn4")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="do_not_move"]
+offset_left = 755.0
+offset_top = 361.0
+offset_right = 844.0
+offset_bottom = 384.0
+text = "Don't move"
