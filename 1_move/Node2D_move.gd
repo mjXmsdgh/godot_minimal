@@ -1,11 +1,8 @@
 extends Node2D
 
-@export var speed=400 #move speed
-var screen_size      #screen size
+var speed=400 #move speed(ピクセル/sec)
+var screen_size:Vector2      #screen size
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +12,7 @@ func _ready():
 func _process(delta):
 
 	# create velocity
-	var velocity=Vector2()
+	var velocity:Vector2=Vector2()
 
 	# input to velocity
 	if Input.is_action_just_pressed("ui_right"):
@@ -40,5 +37,3 @@ func _process(delta):
 	# set position
 	position.x=clamp(position.x,0,screen_size.x)
 	position.y=clamp(position.y,0,screen_size.y)
-
-
