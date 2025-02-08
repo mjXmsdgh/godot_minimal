@@ -1,7 +1,7 @@
 extends Button
 
-var scene=load("res://1_move//Node2D_move.tscn")
-
+# 生成するscene
+@export var scene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

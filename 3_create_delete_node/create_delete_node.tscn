@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ciky3jkqeigqn"]
+[gd_scene load_steps=4 format=3 uid="uid://ciky3jkqeigqn"]
 
 [ext_resource type="Script" path="res://3_create_delete_node/CreateButton.gd" id="1"]
 [ext_resource type="Script" path="res://3_create_delete_node/Delete_Button.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://dvmr4t3jeqvmj" path="res://1_move/Node2D_move.tscn" id="2_d6a3h"]
 
 [node name="Main" type="Node2D"]
 
@@ -13,6 +14,7 @@ offset_bottom = 398.944
 scale = Vector2(2, 2)
 text = "create"
 script = ExtResource("1")
+scene = ExtResource("2_d6a3h")
 
 [node name="Delete_Button" type="Button" parent="."]
 offset_left = 612.169
